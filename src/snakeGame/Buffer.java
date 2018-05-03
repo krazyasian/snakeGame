@@ -1,3 +1,4 @@
+package snakeGame;
 
 public class Buffer {
  // Size of the buffer
@@ -29,9 +30,8 @@ public synchronized void append(int value) {
       // Place the value in the buffer     
     	B[InPtr] = value;
       // print out a debug message
-    	      
-    	System.out.println(Thread.currentThread().getName() +
-                                     " added "+value+" at "+InPtr+" Count was= "+Count);
+    	
+    	System.out.println(Thread.currentThread().getName() +" added "+value+" at "+InPtr+" Count was= "+Count);
       // display the state of the buffer for debug purposes   
     	display();
       // increment the pointer. Note the pointer must wrap around to the start      
