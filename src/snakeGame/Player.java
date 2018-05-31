@@ -2,7 +2,7 @@ package snakeGame;
 
 import java.awt.event.KeyEvent;
 
-public class Player {
+public class Player implements Runnable {
 	
 	public String PlayerName = "PlayerName";
 	
@@ -18,7 +18,12 @@ public class Player {
 	Move lastKeyPressed = null;
 	
 	private int upKey = 0, downKey = 1, leftKey = 2, rightKey = 3;
-	
+
+	public void run()
+	{
+		System.out.println("new player created");
+	}
+
 	public void keyPressed(KeyEvent arg0) {
 		int key = arg0.getKeyCode();
 		
