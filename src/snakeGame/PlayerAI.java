@@ -4,8 +4,8 @@ import snakeGame.Player.Move;
 
 public class PlayerAI extends Player {
 
-	public PlayerAI(String PlayerName) {
-		super(PlayerName);
+	public PlayerAI(String PlayerName, int x, int y) {
+		super(PlayerName, x, y);
 		resetLastKeyPressed();
 		}
 	
@@ -22,5 +22,9 @@ public class PlayerAI extends Player {
 		} else {
 			setLastKeyPressed(Move.NONE);
 		}
+	}
+	
+	private void waitTime() {
+		
 	}
 }
