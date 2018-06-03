@@ -6,7 +6,7 @@ public class Player implements Runnable {
 	
 	public String PlayerName = "PlayerName";
 	
-	public Player(String PlayerName) {
+	public Player(String PlayerName, int x, int y) {
 		this.PlayerName  = PlayerName;
 		resetLastKeyPressed();
 	}
